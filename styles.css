@@ -1,17 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
-
 body {
   font-family: "Manrope", sans-serif;
   background-color: hsl(218, 23%, 16%);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh; 
+  margin: 0; 
 }
 
 .container {
   background-color: hsl(217, 19%, 24%);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around; 
   align-items: center;
   width: 25rem;
   height: 15rem;
@@ -20,13 +21,22 @@ body {
 
 .advice {
   text-align: center;
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
 }
 
 #small-header {
-  margin-bottom: 8rem;
   color: hsl(150, 100%, 66%);
 }
 
 .dice {
-  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#button {
+  background-color: hsl(150, 100%, 66%);
+  padding: .5rem .5rem;
+  border: none;
+  border-radius: 2rem;
 }
